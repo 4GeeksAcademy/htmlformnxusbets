@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Pago</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-7oYfY9tKSq0KMCtwOPBfrWtzDHpQASWwRnPT0ROaSXqLgF6dj6ZKszXDfOmNQe5lAfwXZVv2etKFbLzP4rAKsA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<style>
+  .missing-fields {
+    
+    background-color: #ffc6d2;
+    
+    
+  }
+  body {
+    background-color: black;
+  }
+
+
+  
+ 
+</style>
+</head>
+<body>
+<div class="container mt-5 bg-white p-4">
+  <div class="container   bg-white p-4 border border: 4px solid #ccc;">
+    <div class="row">
+      <div class="col">
+        <h2>Payment for Example</h2>
+        
+        <p class="missing-fields p-2 border ; ">Some fields are missing</p>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="form-group col-md-7 ">
+       <label for="Card #">Card #</label>
+       <input type="text" class="form-control" id="Card #" name="Card #" required>
+      </div>
+      <div class="form-group col-md-2" >
+        <label for="CVC #">CVC #</label>
+        <input type="text" class="form-control" id="CVC #" name="CVC #" required>
+       </div>
+       <div class="form-group col-md-3" >
+        <label for="CVC #">Amount</label>
+        
+        <input type="text" class="form-control" id="Amount" name="Amount" required>
+       </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" name="firstName" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" name="lastName" required>
+      </div>
+    </div>
+      <div class="form-row">
+        <div class="form-group col-md-5">
+          <label for="city">City</label>
+          <input type="text" class="form-control" id="city" name="city" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="state">State</label>
+          <select id="state" class="form-control" name="state" required>
+            <option value="">Pick a State</option>
+            <option value="CA">California</option>
+            <option value="NY">New York</option>
+            <option value="TX">Texas</option>
+            
+          </select>
+        </div>
+        <div class="form-group col-md-3">
+          <label for="postalCode">Postal Code</label>
+          <input type="text" class="form-control" id="postalCode" name="postalCode" required>
+        </div>
+      </div>
+      <div class="row">
+      <div class="form-group col-md-6">
+        <label>We accept</label><br>
+        
+            <button>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            </button>
+          
+         
+         <button type="button" class="btn btn-primary">
+            <i class="fa-brands fa-cc-visa"></i>
+        </div>
+
+
+
+
+
+
+      <div class="form-group col-md-6">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+      </div>
+      
+    </div>
+    <div class="buttons">
+        <div class="row justify-content-end col border border: 14px solid #ccc;">
+        <button type="button" class="btn btn-secondary p-2 col-md-1">Cancel</button>
+        <button type="submit" class="btn btn-primary p-2 col-md-1">Send</button>
+      
+    </div>
+  </div>
+</div>
